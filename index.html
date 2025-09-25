@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chocolate Landing</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- HERO -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="vid1.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
+    <nav class="navbar">
+      <div class="logo">ChocoLux</div>
+
+      <!-- Language toggle -->
+      <button id="langToggle" class="btn btn--ghost" aria-label="Switch language">AR</button>
+
+      <ul class="nav-links">
+        <li><a href="#products" data-i18n="nav_products">Products</a></li>
+        <li><a href="#flavours" data-i18n="nav_flavours">Flavours</a></li>
+        <li><a href="#gifting" data-i18n="nav_gifting">Gifting</a></li>
+        <li><a href="#signup" data-i18n="nav_signup">Sign Up</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1 data-i18n="hero_title">Everyday is Chocolate Day</h1>
+      <p data-i18n="hero_sub">Drizzle, crunch & melt – the sweet indulgence you deserve.</p>
+      <a href="#products" class="btn" data-i18n="cta_shop">Shop Now</a>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT SHOWCASE -->
+  <section id="products" class="product-showcase">
+    <div class="text">
+      <h2 data-i18n="bags_title">Chocolate Bags</h2>
+      <p data-i18n="bags_sub">Perfect for cosy evenings. Shareable, smooth, and rich with flavour.</p>
+      <a href="#" class="btn" data-i18n="cta_shop">Shop Now</a>
+    </div>
+    <div class="image">
+      <img src="choco-bags.png" alt="Chocolate Bags">
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <h2 data-i18n="cat_title">What are you looking for?</h2>
+    <div class="tabs">
+      <span class="active" data-i18n="tab_gifting">Gifting</span>
+      <span data-i18n="tab_fav">Favourites</span>
+      <span data-i18n="tab_brands">Our Brands</span>
+    </div>
+    <div class="grid">
+      <div class="card"><img src="toffee.png" alt=""><h3 data-i18n="tile_toffee_fudge">Toffee & Fudge</h3></div>
+      <div class="card"><img src="gifts.png" alt=""><h3 data-i18n="tile_gifts">Personalised Gifts</h3></div>
+      <div class="card"><img src="boxes.png" alt=""><h3 data-i18n="tile_boxes">Chocolate Boxes</h3></div>
+    </div>
+  </section>
+
+  <!-- FLAVOURS -->
+  <section id="flavours" class="flavours">
+    <h2 data-i18n="flavours_title">Our Flavours</h2>
+    <div class="flavour-grid">
+      <div class="flavour"><img src="toffee.png" alt=""><h3 data-i18n="flav_toffee">Toffee</h3></div>
+      <div class="flavour"><img src="milk.png" alt=""><h3 data-i18n="flav_milk">Milk Chocolate</h3></div>
+      <div class="flavour"><img src="fudge.png" alt=""><h3 data-i18n="flav_fudge">Fudge</h3></div>
+    </div>
+  </section>
+
+  <!-- SIGNUP -->
+  <section id="signup" class="signup">
+    <h2 data-i18n="signup_title">Sign Up</h2>
+    <p data-i18n="signup_sub">Be the first to hear about our exclusive offers and chocolate treats.</p>
+    <form>
+      <input type="email" placeholder="name@email.com" required>
+      <button type="submit" class="btn" data-i18n="signup_btn">Sign Up</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p data-i18n="footer_copy">© 2025 ChocoLux • Crafted with love</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <!-- GSAP (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
